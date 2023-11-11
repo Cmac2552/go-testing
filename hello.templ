@@ -1,0 +1,27 @@
+package main
+
+templ hello(name string) {
+	<html>
+		<head>
+			<meta charset="UTF-8"/>
+			<title>Counts</title>
+			<script src="/assets/js/htmx.min.js"></script>
+		</head>
+		<body>
+			<header>
+				<div>
+					<div>
+						<button hx-get="/replace" hx-trigger="click" hx-swap="outerHTML">Test1</button>
+						<button>
+							Test2
+						</button>
+					</div>
+				</div>
+			</header>
+		</body>
+	</html>
+}
+
+templ bye() {
+	<h1>CMAC</h1>
+}
